@@ -1,6 +1,6 @@
 # 0004 put one emoji in the readme
 
-Status: implemented
+Status: verified
 Branch: loopdog/implement/11
 Issue: #11
 
@@ -29,7 +29,7 @@ add a single emoji of your choice
 ## Acceptance Criteria
 
 <!-- loopdog:acceptance-criteria -->
-- [ ] `README.md` contains at least one emoji character (test: test/readme-emoji.test.ts)
+- [x] `README.md` contains at least one emoji character (test: test/readme-emoji.test.ts)
 <!-- /loopdog:acceptance-criteria -->
 
 ## Implementation Checklist
@@ -62,4 +62,4 @@ Record risks and the rollback path before acting.
 
 ## Final Summary
 
-Fill this in before marking verified.
+Verified by loopdog run `run-review-11-a1-54083f91` (review).
