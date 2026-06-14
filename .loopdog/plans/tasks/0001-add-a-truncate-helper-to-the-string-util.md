@@ -1,6 +1,6 @@
 # 0001 Add a truncate() helper to the string utils
 
-Status: ready
+Status: planned
 Branch: loopdog/implement/2
 Issue: #2
 
@@ -36,6 +36,7 @@ See acceptance criteria `test:` tags.
 
 Add dated entries here as work proceeds.
 - 2026-06-14: groom: in-progress (run `run-groom-2-a2-d23cff67`).
+- 2026-06-14: status ready -> planned (mirrored from issue label; label is authoritative).
 
 ## Decisions
 
