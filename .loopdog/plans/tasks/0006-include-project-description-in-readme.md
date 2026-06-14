@@ -35,6 +35,7 @@ See acceptance criteria `test:` tags.
 ## Verification Log
 
 Add dated entries here as work proceeds.
+- 2026-06-14: triage: needs-grooming (run `run-triage-9-a1-cb3cf462`).
 
 ## Decisions
 
