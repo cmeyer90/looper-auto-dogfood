@@ -1,6 +1,6 @@
 # 0006 include project description in readme
 
-Status: planned
+Status: ready
 Branch: loopdog/implement/9
 Issue: #9
 
@@ -14,7 +14,12 @@ looper dogfood is for testing loopdog
 
 ## Scope
 
-- (groomed scope lands here)
+**In scope:**
+- README.md — adding or expanding the introductory description paragraph
+
+**Out of scope:**
+- Source code, tests, config, or any file other than README.md
+- Restructuring or reformatting sections unrelated to the description
 
 ## Out Of Scope
 
@@ -22,7 +27,10 @@ looper dogfood is for testing loopdog
 
 ## Acceptance Criteria
 
-- [ ] (groomed criteria land here) (manual)
+<!-- loopdog:acceptance-criteria -->
+- [ ] README.md contains a project-description sentence near the top that includes the phrase "testing loopdog" or equivalent (test: grep -q "testing loopdog" README.md)
+- [ ] The description appears before the "Development" section (manual)
+<!-- /loopdog:acceptance-criteria -->
 
 ## Implementation Checklist
 
