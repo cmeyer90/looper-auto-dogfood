@@ -1,6 +1,6 @@
 # 0002 Add a truncate() helper to the string utils
 
-Status: planned
+Status: ready
 Branch: loopdog/implement/2
 Issue: #2
 
