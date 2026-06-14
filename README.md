@@ -1,16 +1,21 @@
 # looper-auto-dogfood
 
-A tiny string-utilities library that exists to **dogfood
-[loopdog](https://github.com/cmeyer90/loopdog)** end to end.
+A tiny string-utilities library.
 
-Issues filed here are driven through the autonomous SDLC loops:
+## Purpose
+
+This repository exists to **dogfood [loopdog](https://github.com/cmeyer90/loopdog)** end-to-end — it is a live test vehicle, not a production library.
+
+**loopdog** is an autonomous SDLC loop runner that drives GitHub issues through a fully automated pipeline with minimal human intervention:
 
 ```
 triage → groom → implement → review → fix → merge
 ```
 
-- **Claude** builds and fixes (triage, groom, implement, fix, merge).
-- **Codex** reviews (cross-model review).
+- **Claude** handles triage, grooming, implementation, fixes, and merging.
+- **Codex** performs cross-model code review.
+
+Every issue filed here is processed end-to-end by AI agents, making this an ideal proving ground for loopdog's capabilities.
 
 ## Development
 
