@@ -1,6 +1,6 @@
 # 0003 feat: add truncate() string helper (#2)
 
-Status: implemented
+Status: verified
 Branch: loopdog/implement/2
 Issue: #2
 
@@ -24,11 +24,11 @@ Closes #2
 
 ## Acceptance Criteria
 
-- [ ] `truncate('hello world', 8)` returns `'hello w…'` (test: test/index.test.ts)
-- [ ] `truncate('hi', 8)` returns `'hi'` — no truncation when input is within limit (test: test/index.test.ts)
-- [ ] A string of exactly `maxLength` characters is returned unchanged (test: test/index.test.ts)
-- [ ] An empty string input returns an empty string (test: test/index.test.ts)
-- [ ] `truncate` is exported from `src/index.ts` (test: test/index.test.ts)
+- [x] `truncate('hello world', 8)` returns `'hello w…'` (test: test/index.test.ts)
+- [x] `truncate('hi', 8)` returns `'hi'` — no truncation when input is within limit (test: test/index.test.ts)
+- [x] A string of exactly `maxLength` characters is returned unchanged (test: test/index.test.ts)
+- [x] An empty string input returns an empty string (test: test/index.test.ts)
+- [x] `truncate` is exported from `src/index.ts` (test: test/index.test.ts)
 
 ## Implementation Checklist
 
@@ -54,4 +54,4 @@ Record risks and the rollback path before acting.
 
 ## Final Summary
 
-Fill this in before marking verified.
+Verified by loopdog run `run-review-4-a1-d03cfc41` (review).
