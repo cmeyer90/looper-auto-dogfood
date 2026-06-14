@@ -1,6 +1,6 @@
 # 0006 include project description in readme
 
-Status: ready
+Status: planned
 Branch: loopdog/implement/9
 Issue: #9
 
@@ -36,6 +36,7 @@ See acceptance criteria `test:` tags.
 
 Add dated entries here as work proceeds.
 - 2026-06-14: triage: needs-grooming (run `run-triage-9-a1-cb3cf462`).
+- 2026-06-14: status ready -> planned (mirrored from issue label; label is authoritative).
 
 ## Decisions
 
