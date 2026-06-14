@@ -1,6 +1,6 @@
 # 0004 put one emoji in the readme
 
-Status: planned
+Status: ready
 Branch: loopdog/implement/11
 Issue: #11
 
