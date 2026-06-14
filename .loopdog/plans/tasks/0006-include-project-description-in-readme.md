@@ -1,6 +1,6 @@
 # 0006 include project description in readme
 
-Status: ready
+Status: in-progress
 Branch: loopdog/implement/9
 Issue: #9
 
@@ -47,6 +47,7 @@ Add dated entries here as work proceeds.
 - 2026-06-14: status ready -> planned (mirrored from issue label; label is authoritative).
 - 2026-06-14: groom: in-progress (run `run-groom-9-a1-cb3cf462`).
 - 2026-06-14: implement: in-progress (run `run-implement-9-a1-cb3cf462`).
+- 2026-06-14: status ready -> in-progress (mirrored from issue label; label is authoritative).
 
 ## Decisions
 
