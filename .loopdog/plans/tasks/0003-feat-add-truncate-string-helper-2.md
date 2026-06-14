@@ -1,6 +1,6 @@
 # 0003 feat: add truncate() string helper (#2)
 
-Status: ready
+Status: implemented
 Branch: loopdog/implement/4
 Issue: #4
 
@@ -36,6 +36,7 @@ See acceptance criteria `test:` tags.
 
 Add dated entries here as work proceeds.
 - 2026-06-14: review: in-progress (run `run-review-4-a1-d03cfc41`).
+- 2026-06-14: status ready -> implemented (mirrored from issue label; label is authoritative).
 
 ## Decisions
 
