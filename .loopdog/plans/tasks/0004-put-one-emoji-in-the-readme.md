@@ -1,6 +1,6 @@
 # 0004 put one emoji in the readme
 
-Status: ready
+Status: planned
 Branch: loopdog/implement/11
 Issue: #11
 
@@ -36,6 +36,7 @@ See acceptance criteria `test:` tags.
 
 Add dated entries here as work proceeds.
 - 2026-06-14: triage: needs-grooming (run `run-triage-11-a1-54083f91`).
+- 2026-06-14: status ready -> planned (mirrored from issue label; label is authoritative).
 
 ## Decisions
 
