@@ -1,0 +1,12 @@
+# Review: cross-provider adversarial review + intent-diff against criteria.
+name: review
+trigger:
+  github_event: pull_request
+  action: [opened, synchronize, ready_for_review]
+transition: { from: in-review, to: verified, fallback: changes-requested }
+expects: comment
+gates: { require_dor: false, require_ci: true, tier: default }
+# Cross-provider rule: the reviewer differs from the implementer. The implement
+# loop runs on Claude, so review dispatches to Codex for an independent
+# cross-model read (needs the Codex GitHub App + LOOPDOG_CODEX_MENTION_TOKEN).
+backend: codex

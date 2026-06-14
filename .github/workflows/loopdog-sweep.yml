@@ -1,0 +1,26 @@
+# Loopdog reconcile sweep — thin caller scaffolded by `loopdog init` (task 0076).
+# Keep the schedule aligned with `sweep.interval` in .loopdog/loopdog.yml.
+name: loopdog-sweep
+on:
+  schedule:
+    - cron: '*/5 * * * *'
+  workflow_dispatch: # manual/debug tick
+
+permissions:
+  contents: read
+  issues: write
+  pull-requests: write
+
+jobs:
+  loopdog:
+    # Pinned to the exact loopdog commit carrying the secret-forwarding reusable
+    # workflow (immutable SHA pin). `loopdog-version` pins @loopdog/cli.
+    uses: cmeyer90/loopdog/.github/workflows/reusable-sweep.yml@941141cf8b5e89bdb04f00abe6ed9b0159c2b0c3
+    with:
+      loopdog-version: 0.2.0
+    # The sweep carries controller->controller handoffs, so it is the path that
+    # actually dispatches most loops — it needs the provider secrets too.
+    secrets:
+      claude-fire-url: ${{ secrets.LOOPDOG_CLAUDE_FIRE_URL }}
+      claude-fire-token: ${{ secrets.LOOPDOG_CLAUDE_FIRE_TOKEN }}
+      codex-mention-token: ${{ secrets.LOOPDOG_CODEX_MENTION_TOKEN }}

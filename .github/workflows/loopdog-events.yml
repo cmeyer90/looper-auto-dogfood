@@ -1,0 +1,55 @@
+# Loopdog event trigger — thin caller scaffolded by `loopdog init` (task 0008).
+# The `on:` types are PINNED to loopdog's canonical event/action matrix; new
+# GitHub actions are ignored until loopdog intentionally extends the matrix.
+# Logic lives in loopdog's versioned reusable workflow — update by bumping the
+# ref below, never by editing logic here.
+name: loopdog-events
+on:
+  issues:
+    types: [opened, edited, reopened, labeled, unlabeled]
+  issue_comment:
+    types: [created, edited]
+  pull_request:
+    types:
+      [
+        opened,
+        reopened,
+        synchronize,
+        ready_for_review,
+        converted_to_draft,
+        labeled,
+        unlabeled,
+        closed,
+      ]
+  pull_request_review:
+    types: [submitted, edited, dismissed]
+  check_run:
+    types: [completed, rerequested]
+  check_suite:
+    types: [completed]
+  status:
+  workflow_run:
+    workflows: ['ci'] # your required CI workflow name(s)
+    types: [completed]
+  label:
+    types: [created, edited, deleted]
+
+permissions:
+  contents: read
+  issues: write
+  pull-requests: write
+
+jobs:
+  loopdog:
+    # Pinned to the exact loopdog commit carrying the secret-forwarding reusable
+    # workflow (immutable SHA pin). `loopdog-version` pins @loopdog/cli.
+    uses: cmeyer90/loopdog/.github/workflows/reusable-events.yml@941141cf8b5e89bdb04f00abe6ed9b0159c2b0c3
+    with:
+      loopdog-version: 0.2.0
+    # Forward the provider secrets the controller needs to dispatch in `act`
+    # mode. Unset secrets pass through as empty — dry-run/suggest loops and the
+    # deterministic triage loop never read them. Stored by `loopdog connect`.
+    secrets:
+      claude-fire-url: ${{ secrets.LOOPDOG_CLAUDE_FIRE_URL }}
+      claude-fire-token: ${{ secrets.LOOPDOG_CLAUDE_FIRE_TOKEN }}
+      codex-mention-token: ${{ secrets.LOOPDOG_CODEX_MENTION_TOKEN }}
