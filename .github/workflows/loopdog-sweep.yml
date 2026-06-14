@@ -18,9 +18,9 @@ jobs:
   loopdog:
     # Pinned to the exact loopdog commit carrying the secret-forwarding reusable
     # workflow (immutable SHA pin). `loopdog-version` pins @loopdog/cli.
-    uses: cmeyer90/loopdog/.github/workflows/reusable-sweep.yml@24095904c823d865e6fe704e57d7963344824495
+    uses: cmeyer90/loopdog/.github/workflows/reusable-sweep.yml@v0
     with:
-      loopdog-version: 0.2.0
+      loopdog-version: '0'
     # The sweep carries controller->controller handoffs, so it is the path that
     # actually dispatches most loops — it needs the provider secrets too.
     secrets:
