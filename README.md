@@ -1,5 +1,7 @@
 # looper-auto-dogfood
 
+looper dogfood is for testing loopdog.
+
 A tiny string-utilities library that exists to **dogfood
 [loopdog](https://github.com/cmeyer90/loopdog)** end to end.
 
