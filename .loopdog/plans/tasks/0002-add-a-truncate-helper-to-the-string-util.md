@@ -44,6 +44,7 @@ Add dated entries here as work proceeds.
 - 2026-06-14: implement: in-progress (run `run-implement-2-a1-d23cff67`).
 - 2026-06-14: status ready -> in-progress (mirrored from issue label; label is authoritative).
 - 2026-06-14: status in-progress -> implemented (mirrored from issue label; label is authoritative).
+- 2026-06-14: review: in-progress (run `run-review-2-a1-d23cff67`).
 
 ## Decisions
 
