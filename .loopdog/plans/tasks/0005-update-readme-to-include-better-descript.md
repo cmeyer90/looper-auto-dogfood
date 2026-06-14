@@ -1,6 +1,6 @@
 # 0005 update readme to include better description
 
-Status: ready
+Status: in-progress
 Branch: loopdog/implement/10
 Issue: #10
 
@@ -51,6 +51,7 @@ Add dated entries here as work proceeds.
 - 2026-06-14: status ready -> planned (mirrored from issue label; label is authoritative).
 - 2026-06-14: groom: in-progress (run `run-groom-10-a1-53083dfe`).
 - 2026-06-14: implement: in-progress (run `run-implement-10-a1-53083dfe`).
+- 2026-06-14: status ready -> in-progress (mirrored from issue label; label is authoritative).
 
 ## Decisions
 
