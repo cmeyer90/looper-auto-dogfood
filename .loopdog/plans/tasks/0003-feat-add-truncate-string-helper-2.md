@@ -35,6 +35,7 @@ See acceptance criteria `test:` tags.
 ## Verification Log
 
 Add dated entries here as work proceeds.
+- 2026-06-14: review: in-progress (run `run-review-4-a1-d03cfc41`).
 
 ## Decisions
 
