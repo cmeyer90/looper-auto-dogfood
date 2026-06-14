@@ -35,6 +35,7 @@ See acceptance criteria `test:` tags.
 ## Verification Log
 
 Add dated entries here as work proceeds.
+- 2026-06-14: groom: in-progress (run `run-groom-2-a2-d23cff67`).
 
 ## Decisions
 
