@@ -26,3 +26,14 @@ export function capitalize(input: string): string {
   if (input.length === 0) return input;
   return input[0]!.toUpperCase() + input.slice(1);
 }
+
+/**
+ * Shorten a string to at most `maxLength` characters. When the input exceeds
+ * the limit the result is sliced and a Unicode ellipsis (…) is appended;
+ * the ellipsis counts toward `maxLength`. Returns '' when maxLength <= 0.
+ */
+export function truncate(input: string, maxLength: number): string {
+  if (maxLength <= 0) return '';
+  if (input.length <= maxLength) return input;
+  return input.slice(0, maxLength - 1) + '…';
+}
