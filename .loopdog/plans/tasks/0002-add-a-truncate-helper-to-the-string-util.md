@@ -41,6 +41,7 @@ See acceptance criteria `test:` tags.
 ## Verification Log
 
 Add dated entries here as work proceeds.
+- 2026-06-14: implement: in-progress (run `run-implement-2-a1-d23cff67`).
 
 ## Decisions
 
