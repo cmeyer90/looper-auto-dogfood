@@ -34,7 +34,8 @@ add a single emoji of your choice
 
 ## Implementation Checklist
 
-- [ ] (filled in by the implementation work cell)
+- [x] Add one emoji (🐶) to README.md title
+- [x] Create `test/readme-emoji.test.ts` to verify emoji presence
 
 ## Test Plan
 
@@ -47,6 +48,7 @@ Add dated entries here as work proceeds.
 - 2026-06-14: status ready -> planned (mirrored from issue label; label is authoritative).
 - 2026-06-14: groom: in-progress (run `run-groom-11-a2-54083f91`).
 - 2026-06-14: implement: in-progress (run `run-implement-11-a1-54083f91`).
+- 2026-06-14: implement: complete — added 🐶 to README.md title; test/readme-emoji.test.ts passes (11/11 tests green).
 
 ## Decisions
 

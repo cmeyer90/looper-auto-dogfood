@@ -1,4 +1,4 @@
-# looper-auto-dogfood
+# looper-auto-dogfood 🐶
 
 A tiny string-utilities library that exists to **dogfood
 [loopdog](https://github.com/cmeyer90/loopdog)** end to end.
