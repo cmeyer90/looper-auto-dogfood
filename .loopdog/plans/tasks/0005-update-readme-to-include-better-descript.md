@@ -30,15 +30,18 @@ this project is for dogfooding, explain that
 ## Acceptance Criteria
 
 <!-- loopdog:acceptance-criteria -->
-- [ ] README contains a dedicated section (or prominent paragraph) that explicitly states the project's purpose as a dogfooding vehicle for loopdog (manual)
-- [ ] README explains what loopdog is — the autonomous SDLC loop that drives issues from triage through merge — with a brief description or link (manual)
-- [ ] The dogfooding explanation appears near the top of the README, before the Development / Library API sections (manual)
-- [ ] Existing content (Development commands, Library usage examples) is preserved unchanged (manual)
+- [x] README contains a dedicated section (or prominent paragraph) that explicitly states the project's purpose as a dogfooding vehicle for loopdog (manual)
+- [x] README explains what loopdog is — the autonomous SDLC loop that drives issues from triage through merge — with a brief description or link (manual)
+- [x] The dogfooding explanation appears near the top of the README, before the Development / Library API sections (manual)
+- [x] Existing content (Development commands, Library usage examples) is preserved unchanged (manual)
 <!-- /loopdog:acceptance-criteria -->
 
 ## Implementation Checklist
 
-- [ ] (filled in by the implementation work cell)
+- [x] Added `## Purpose` section near top of README before Development/Library sections
+- [x] Section explicitly names loopdog and describes the autonomous SDLC pipeline
+- [x] Link to loopdog GitHub repo included
+- [x] Existing Development and Library sections preserved unchanged
 
 ## Test Plan
 
@@ -52,6 +55,7 @@ Add dated entries here as work proceeds.
 - 2026-06-14: groom: in-progress (run `run-groom-10-a1-53083dfe`).
 - 2026-06-14: implement: in-progress (run `run-implement-10-a1-53083dfe`).
 - 2026-06-14: status ready -> in-progress (mirrored from issue label; label is authoritative).
+- 2026-06-14: implement: added `## Purpose` section to README; all acceptance criteria satisfied; PR opened.
 
 ## Decisions
 
@@ -63,4 +67,4 @@ Record risks and the rollback path before acting.
 
 ## Final Summary
 
-Fill this in before marking verified.
+Added a `## Purpose` section to README.md immediately after the title, before the Development and Library sections. The section explicitly names loopdog, describes it as an autonomous SDLC loop runner, shows the triage→merge pipeline, and links to the loopdog GitHub repository. All existing content is preserved unchanged.
