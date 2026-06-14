@@ -1,8 +1,8 @@
 # 0003 feat: add truncate() string helper (#2)
 
 Status: implemented
-Branch: loopdog/implement/4
-Issue: #4
+Branch: loopdog/implement/2
+Issue: #2
 
 ## Goal
 
@@ -14,15 +14,21 @@ Closes #2
 
 ## Scope
 
-- (groomed scope lands here)
+- `src/index.ts` — add and export `truncate(input: string, maxLength: number): string`
+- `test/index.test.ts` — add test coverage for all criteria below
 
 ## Out Of Scope
 
-- (none recorded yet)
+- Other string utilities
+- Changes to build config, CI workflows, or dependencies
 
 ## Acceptance Criteria
 
-- [ ] (groomed criteria land here) (manual)
+- [ ] `truncate('hello world', 8)` returns `'hello w…'` (test: test/index.test.ts)
+- [ ] `truncate('hi', 8)` returns `'hi'` — no truncation when input is within limit (test: test/index.test.ts)
+- [ ] A string of exactly `maxLength` characters is returned unchanged (test: test/index.test.ts)
+- [ ] An empty string input returns an empty string (test: test/index.test.ts)
+- [ ] `truncate` is exported from `src/index.ts` (test: test/index.test.ts)
 
 ## Implementation Checklist
 
