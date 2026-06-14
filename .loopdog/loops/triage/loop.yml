@@ -6,3 +6,4 @@ trigger:
 transition: { from: new, to: needs-grooming }
 expects: none
 gates: { require_dor: false, require_ci: false, tier: safe }
+mode: act
