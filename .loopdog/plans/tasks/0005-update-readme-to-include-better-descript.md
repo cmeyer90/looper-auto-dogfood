@@ -1,6 +1,6 @@
 # 0005 update readme to include better description
 
-Status: planned
+Status: ready
 Branch: loopdog/implement/10
 Issue: #10
 
