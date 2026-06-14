@@ -1,0 +1,22 @@
+{
+  "name": "looper-auto-dogfood",
+  "version": "0.0.0",
+  "private": true,
+  "description": "A tiny string-utilities library used to dogfood loopdog end to end.",
+  "type": "module",
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "vitest run",
+    "lint": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@types/node": "^20.19.0",
+    "typescript": "~5.6.3",
+    "vitest": "^2.1.9"
+  }
+}
