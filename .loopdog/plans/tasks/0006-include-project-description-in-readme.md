@@ -1,6 +1,6 @@
 # 0006 include project description in readme
 
-Status: implemented
+Status: verified
 Branch: loopdog/implement/9
 Issue: #9
 
@@ -28,8 +28,8 @@ looper dogfood is for testing loopdog
 ## Acceptance Criteria
 
 <!-- loopdog:acceptance-criteria -->
-- [ ] README.md contains a project-description sentence near the top that includes the phrase "testing loopdog" or equivalent (test: grep -q "testing loopdog" README.md)
-- [ ] The description appears before the "Development" section (manual)
+- [x] README.md contains a project-description sentence near the top that includes the phrase "testing loopdog" or equivalent (test: grep -q "testing loopdog" README.md)
+- [x] The description appears before the "Development" section (manual)
 <!-- /loopdog:acceptance-criteria -->
 
 ## Implementation Checklist
@@ -62,4 +62,4 @@ Record risks and the rollback path before acting.
 
 ## Final Summary
 
-Fill this in before marking verified.
+Verified by loopdog run `run-review-9-a1-cb3cf462` (review).
