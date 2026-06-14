@@ -1,6 +1,6 @@
 # 0006 include project description in readme
 
-Status: planned
+Status: ready
 Branch: loopdog/implement/9
 Issue: #9
 
