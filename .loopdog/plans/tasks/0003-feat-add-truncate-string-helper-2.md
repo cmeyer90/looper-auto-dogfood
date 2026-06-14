@@ -1,6 +1,6 @@
 # 0003 feat: add truncate() string helper (#2)
 
-Status: planned
+Status: ready
 Branch: loopdog/implement/4
 Issue: #4
 
