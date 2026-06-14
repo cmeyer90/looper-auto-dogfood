@@ -46,6 +46,7 @@ Add dated entries here as work proceeds.
 - 2026-06-14: triage: needs-grooming (run `run-triage-11-a1-54083f91`).
 - 2026-06-14: status ready -> planned (mirrored from issue label; label is authoritative).
 - 2026-06-14: groom: in-progress (run `run-groom-11-a2-54083f91`).
+- 2026-06-14: implement: in-progress (run `run-implement-11-a1-54083f91`).
 
 ## Decisions
 
