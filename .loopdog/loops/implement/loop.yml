@@ -7,3 +7,4 @@ transition: { from: ready-for-agent, to: in-review }
 expects: pull-request
 gates: { require_dor: true, require_ci: true, tier: default }
 blast_radius: { max_files: 20 }
+mode: act

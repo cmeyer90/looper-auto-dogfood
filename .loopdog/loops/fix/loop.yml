@@ -6,3 +6,4 @@ trigger:
 transition: { from: changes-requested, to: in-review }
 expects: pull-request
 gates: { require_dor: true, require_ci: true, tier: default }
+mode: act

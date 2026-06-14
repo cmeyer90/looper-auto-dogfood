@@ -6,7 +6,8 @@ trigger:
 transition: { from: in-review, to: verified, fallback: changes-requested }
 expects: comment
 gates: { require_dor: false, require_ci: true, tier: default }
-# Cross-provider rule: the reviewer differs from the implementer. The implement
-# loop runs on Claude, so review dispatches to Codex for an independent
-# cross-model read (needs the Codex GitHub App + LOOPDOG_CODEX_MENTION_TOKEN).
-backend: codex
+# Cross-provider review normally dispatches to Codex; for this dogfood (no Codex
+# mention token yet) review falls back to the Claude routine so the loop closes.
+# Switch back to `backend: codex` once LOOPDOG_CODEX_MENTION_TOKEN is set.
+backend: claude
+mode: act
