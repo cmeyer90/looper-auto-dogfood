@@ -1,6 +1,6 @@
 # 0005 update readme to include better description
 
-Status: implemented
+Status: verified
 Branch: loopdog/implement/10
 Issue: #10
 
@@ -30,10 +30,10 @@ this project is for dogfooding, explain that
 ## Acceptance Criteria
 
 <!-- loopdog:acceptance-criteria -->
-- [ ] README contains a dedicated section (or prominent paragraph) that explicitly states the project's purpose as a dogfooding vehicle for loopdog (manual)
-- [ ] README explains what loopdog is — the autonomous SDLC loop that drives issues from triage through merge — with a brief description or link (manual)
-- [ ] The dogfooding explanation appears near the top of the README, before the Development / Library API sections (manual)
-- [ ] Existing content (Development commands, Library usage examples) is preserved unchanged (manual)
+- [x] README contains a dedicated section (or prominent paragraph) that explicitly states the project's purpose as a dogfooding vehicle for loopdog (manual)
+- [x] README explains what loopdog is — the autonomous SDLC loop that drives issues from triage through merge — with a brief description or link (manual)
+- [x] The dogfooding explanation appears near the top of the README, before the Development / Library API sections (manual)
+- [x] Existing content (Development commands, Library usage examples) is preserved unchanged (manual)
 <!-- /loopdog:acceptance-criteria -->
 
 ## Implementation Checklist
@@ -66,4 +66,4 @@ Record risks and the rollback path before acting.
 
 ## Final Summary
 
-Fill this in before marking verified.
+Verified by loopdog run `run-review-14-a1-5708444a` (review).
