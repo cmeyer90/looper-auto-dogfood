@@ -1,6 +1,6 @@
 # 0007 Add an isBlank string helper
 
-Status: ready
+Status: in-progress
 Branch: loopdog/implement/15
 Issue: #15
 
@@ -54,6 +54,7 @@ Add dated entries here as work proceeds.
 - 2026-06-16: status ready -> planned (mirrored from issue label; label is authoritative).
 - 2026-06-16: groom: in-progress (run `run-groom-15-a1-580845dd`).
 - 2026-06-16: implement: in-progress (run `run-implement-15-a1-580845dd`).
+- 2026-06-16: status ready -> in-progress (mirrored from issue label; label is authoritative).
 
 ## Decisions
 
