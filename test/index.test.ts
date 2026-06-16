@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest';
-import { slugify, capitalize, truncate } from '../src/index.js';
+import { slugify, capitalize, truncate, isBlank } from '../src/index.js';
 
 describe('slugify', () => {
   it('lowercases and hyphenates words', () => {
@@ -44,5 +44,27 @@ describe('truncate', () => {
 
   it('returns empty string when maxLength is zero', () => {
     expect(truncate('hello', 0)).toBe('');
+  });
+});
+
+describe('isBlank', () => {
+  it('returns true for an empty string', () => {
+    expect(isBlank('')).toBe(true);
+  });
+
+  it('returns true for a string of spaces', () => {
+    expect(isBlank('   ')).toBe(true);
+  });
+
+  it('returns true for a string of tab and newline', () => {
+    expect(isBlank('\t\n')).toBe(true);
+  });
+
+  it('returns false for a single non-whitespace character', () => {
+    expect(isBlank('a')).toBe(false);
+  });
+
+  it('returns false for a string with non-whitespace surrounded by spaces', () => {
+    expect(isBlank('  x  ')).toBe(false);
   });
 });

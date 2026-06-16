@@ -37,3 +37,10 @@ export function truncate(input: string, maxLength: number): string {
   if (input.length <= maxLength) return input;
   return input.slice(0, maxLength - 1) + '…';
 }
+
+/**
+ * Return true when the string is empty or contains only whitespace characters.
+ */
+export function isBlank(input: string): boolean {
+  return input.trim().length === 0;
+}
