@@ -1,6 +1,6 @@
 # 0007 Add an isBlank string helper
 
-Status: implemented
+Status: verified
 Branch: loopdog/implement/15
 Issue: #15
 
@@ -30,13 +30,13 @@ Add an `isBlank(input: string): boolean` helper to the string utils.
 ## Acceptance Criteria
 
 <!-- loopdog:acceptance-criteria -->
-- [ ] `isBlank('')` returns `true` (test: test/index.test.ts)
-- [ ] `isBlank('   ')` returns `true` (test: test/index.test.ts)
-- [ ] `isBlank('\t\n')` returns `true` (test: test/index.test.ts)
-- [ ] `isBlank('a')` returns `false` (test: test/index.test.ts)
-- [ ] `isBlank('  x  ')` returns `false` (test: test/index.test.ts)
-- [ ] `isBlank` is exported from `src/index.ts` (test: test/index.test.ts)
-- [ ] Implementation is dependency-free and consistent with existing code style (manual)
+- [x] `isBlank('')` returns `true` (test: test/index.test.ts)
+- [x] `isBlank('   ')` returns `true` (test: test/index.test.ts)
+- [x] `isBlank('\t\n')` returns `true` (test: test/index.test.ts)
+- [x] `isBlank('a')` returns `false` (test: test/index.test.ts)
+- [x] `isBlank('  x  ')` returns `false` (test: test/index.test.ts)
+- [x] `isBlank` is exported from `src/index.ts` (test: test/index.test.ts)
+- [x] Implementation is dependency-free and consistent with existing code style (manual)
 <!-- /loopdog:acceptance-criteria -->
 
 ## Implementation Checklist
@@ -69,4 +69,4 @@ Record risks and the rollback path before acting.
 
 ## Final Summary
 
-Fill this in before marking verified.
+Verified by loopdog run `run-review-15-a1-580845dd` (review).
