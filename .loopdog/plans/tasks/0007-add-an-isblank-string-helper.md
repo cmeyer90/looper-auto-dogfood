@@ -1,6 +1,6 @@
 # 0007 Add an isBlank string helper
 
-Status: ready
+Status: planned
 Branch: loopdog/implement/15
 Issue: #15
 
@@ -36,6 +36,7 @@ See acceptance criteria `test:` tags.
 
 Add dated entries here as work proceeds.
 - 2026-06-16: triage: needs-grooming (run `run-triage-15-a1-580845dd`).
+- 2026-06-16: status ready -> planned (mirrored from issue label; label is authoritative).
 
 ## Decisions
 
