@@ -37,6 +37,7 @@ See acceptance criteria `test:` tags.
 Add dated entries here as work proceeds.
 - 2026-06-16: triage: needs-grooming (run `run-triage-15-a1-580845dd`).
 - 2026-06-16: status ready -> planned (mirrored from issue label; label is authoritative).
+- 2026-06-16: groom: in-progress (run `run-groom-15-a1-580845dd`).
 
 ## Decisions
 
