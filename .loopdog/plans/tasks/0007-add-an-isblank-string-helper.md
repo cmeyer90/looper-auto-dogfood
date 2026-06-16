@@ -1,6 +1,6 @@
 # 0007 Add an isBlank string helper
 
-Status: planned
+Status: ready
 Branch: loopdog/implement/15
 Issue: #15
 
@@ -14,7 +14,14 @@ Add an `isBlank(input: string): boolean` helper to the string utils.
 
 ## Scope
 
-- (groomed scope lands here)
+**In scope:**
+- `src/index.ts` — add `isBlank(input: string): boolean` and export it
+- `test/index.test.ts` — add a `describe('isBlank', ...)` block with unit tests
+
+**Out of scope:**
+- Overloads for non-string types
+- Changes to existing helpers (`slugify`, `capitalize`, `truncate`)
+- `README.md`, `package.json`, `tsconfig.json`, or any other file
 
 ## Out Of Scope
 
@@ -22,7 +29,15 @@ Add an `isBlank(input: string): boolean` helper to the string utils.
 
 ## Acceptance Criteria
 
-- [ ] (groomed criteria land here) (manual)
+<!-- loopdog:acceptance-criteria -->
+- [ ] `isBlank('')` returns `true` (test: test/index.test.ts)
+- [ ] `isBlank('   ')` returns `true` (test: test/index.test.ts)
+- [ ] `isBlank('\t\n')` returns `true` (test: test/index.test.ts)
+- [ ] `isBlank('a')` returns `false` (test: test/index.test.ts)
+- [ ] `isBlank('  x  ')` returns `false` (test: test/index.test.ts)
+- [ ] `isBlank` is exported from `src/index.ts` (test: test/index.test.ts)
+- [ ] Implementation is dependency-free and consistent with existing code style (manual)
+<!-- /loopdog:acceptance-criteria -->
 
 ## Implementation Checklist
 
