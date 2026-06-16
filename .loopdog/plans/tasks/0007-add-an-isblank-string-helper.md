@@ -1,6 +1,6 @@
 # 0007 Add an isBlank string helper
 
-Status: planned
+Status: ready
 Branch: loopdog/implement/15
 Issue: #15
 
